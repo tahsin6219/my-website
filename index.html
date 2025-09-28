@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanjina Tahsin - Academic Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind's gray-50 */
+        }
+        .section-title {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+            color: #1f2937; /* gray-800 */
+            margin-bottom: 1.5rem; /* mb-6 */
+            text-align: center;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 1.5rem; /* mb-6 */
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .nav-link {
+            color: #4b5563; /* gray-600 */
+            transition: color 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .nav-link:hover {
+            color: #111827; /* gray-900 */
+            background-color: #f3f4f6; /* gray-100 */
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-40 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900">Tanjina Tahsin</h1>
+            <div class="hidden md:flex space-x-2">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#academics" class="nav-link">Academics</a>
+                <a href="#hobbies" class="nav-link">Hobbies</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block nav-link text-center">About</a>
+            <a href="#experience" class="block nav-link text-center">Experience</a>
+            <a href="#research" class="block nav-link text-center">Research</a>
+            <a href="#academics" class="block nav-link text-center">Academics</a>
+            <a href="#hobbies" class="block nav-link text-center">Hobbies</a>
+            <a href="#gallery" class="block nav-link text-center">Gallery</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        
+        <section id="about" class="mb-16">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3 text-center">
+                    <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=Tanjina+Tahsin" alt="Tanjina Tahsin" class="rounded-full w-64 h-64 mx-auto object-cover shadow-lg">
+                    <div class="mt-6 flex justify-center space-x-5">
+                        <a href="#" target="_blank" class="text-gray-500 hover:text-gray-900">
+                            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.206v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.71zM4.988 7.554a1.287 1.287 0 01-1.288-1.287 1.287 1.287 0 112.574 0 1.287 1.287 0 01-1.286 1.287z" clip-rule="evenodd" /><path d="M6.281 16.338H3.693V7.748h2.588v8.59zM17.625 2h-11.25A2.375 2.375 0 004 4.375v15.25A2.375 2.375 0 006.375 22h11.25A2.375 2.375 0 0020 19.625V4.375A2.375 2.375 0 0017.625 2zM6.28 16.338H3.69V7.748h2.59v8.59h- .01zM4.98 7.554a1.28 1.28 0 01-1.28-1.287c0-.71.58-1.287 1.28-1.287s1.28.577 1.28 1.287c0 .71-.58 1.287-1.28 1.287zm10.02 8.784h-2.67V12.16c0-.995-.02-2.277-1.39-2.277-1.39 0-1.6 1.086-1.6 2.206v4.248H8.01V7.748h2.56v1.174h.04c.36-.675 1.23-1.387 2.53-1.387 2.7 0 3.2 1.778 3.2 4.092v4.71z" /></svg>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                         <a href="mailto:tanjinatahsindu@gmail.com" class="text-gray-500 hover:text-gray-900">
+                            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.25 4.5A2.25 2.25 0 014.5 2.25h15A2.25 2.25 0 0121.75 4.5v15A2.25 2.25 0 0119.5 21.75h-15A2.25 2.25 0 012.25 19.5v-15zM4.5 3.75a.75.75 0 00-.75.75v15c0 .414.336.75.75.75h15a.75.75 0 00.75-.75v-15a.75.75 0 00-.75-.75h-15z"/><path d="M5.053 6.262a.75.75 0 01.994 0l5.193 4.328a1.5 1.5 0 001.92 0l5.193-4.328a.75.75 0 11.994 1.12l-5.193 4.328a3 3 0 01-3.84 0L4.059 7.382a.75.75 0 01.994-1.12z"/></svg>
+                             <span class="sr-only">Email</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Hello, I'm Tanjina Tahsin</h2>
+                    <div>
+                        <p class="mb-4 text-lg leading-relaxed">My journey began with a curiosity that led me to academia, where I've embraced the opportunity to forge new paths. Along the way, I've discovered the transformative power of education and learning not only to welcome new ideas but also to understand the nuances of complex social and political issues. As I look to the future, my goal is to contribute to an organization that challenges me to keep growing, so I can build a legacy of work that brings pride to myself, my family, my juniors and all the people who believed in me.</p>
+                        <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-2">Academic Interests</h3>
+                        <p class="leading-relaxed">My primary research interests lie at the intersection of technology and society. I am particularly fascinated by Computational Social Sciences, Migration and Immigration patterns, the dynamics of Social Movements and Activism, and the nuances of Political Psychology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-16">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:bg-gray-200">
+                <div class="relative pl-12 card">
+                    <div class="absolute -left-1.5 top-5 h-5 w-5 rounded-full bg-indigo-600 border-4 border-white"></div>
+                    <div>
+                        <p class="text-sm font-medium text-indigo-600">December 2023 – August 2025</p>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1">Assistant Manager, MD's Office</h3>
+                        <p class="font-medium text-gray-600">MUNSHI, Dhaka, Bangladesh</p>
+                        <ul class="list-disc list-inside mt-3 text-gray-600 space-y-1">
+                            <li>Served as an executive assistant, maintaining liaison among sub-business units.</li>
+                            <li>Conducted research on business profiles and assisted in policy development.</li>
+                            <li>Managed documentation, editing, and proofreading of official contracts and agreements.</li>
+                            <li>Maintained and updated schedules to ensure smooth operational flow.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative pl-12 card">
+                    <div class="absolute -left-1.5 top-5 h-5 w-5 rounded-full bg-indigo-600 border-4 border-white"></div>
+                    <div>
+                        <p class="text-sm font-medium text-indigo-600">June 2022 – November 2023</p>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1">Research Executive</h3>
+                        <p class="font-medium text-gray-600">Panjeere Publication Ltd, Dhaka, Bangladesh</p>
+                         <ul class="list-disc list-inside mt-3 text-gray-600 space-y-1">
+                            <li>Responsible for content writing, topic research, editing, and proofreading.</li>
+                            <li>Led a team to ensure high-quality research output.</li>
+                            <li> Assigned Subjects: Political Science, Sociology, Religious Studies</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative pl-12 card">
+                    <div class="absolute -left-1.5 top-5 h-5 w-5 rounded-full bg-indigo-600 border-4 border-white"></div>
+                    <div>
+                        <p class="text-sm font-medium text-indigo-600">November 2020 – May 2021</p>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1">Research Assistant</h3>
+                        <p class="font-medium text-gray-600">RMMRU (Refugee and Migratory Movements Research Unit), Dhaka</p>
+                         <ul class="list-disc list-inside mt-3 text-gray-600 space-y-1">
+                            <li>Worked on the "Impact of Migration Poverty and Development (IMPD-3)" project.</li>
+                            <li>Conducted data collection, field visits, data analysis, and case studies.</li>
+                            <li>Facilitated in-depth interviews and focus group discussions (FGDs).</li>
+                            <li>Ensured data validity and reliability, prepared transcripts, and assisted in report writing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="py-16 bg-white rounded-2xl">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Research & Publications</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Journal Article (Under Review)</h3>
+                        <p>"Caught Between Two Giants: Bangladesh's Strategic Dilemma on approving the US backed UN-led Humanitarian Corridor to Rakhine." - Submitted to <em class="italic">Journal of Peace Research</em>.</p>
+                        <a href="#" class="text-indigo-600 hover:underline">SSRN Link</a>
+                    </div>
+                    <div class="border-t pt-6">
+                        <h3 class="text-lg font-semibold text-gray-800">Magazine Article</h3>
+                        <p>"Mob Violence in Bangladesh: Challenges and Recommendations for the Interim Government." - Published in <em class="italic">The Policy Pulse Magazine (Vol.1)</em>, Center for Policy Studies (Dhaka).</p>
+                        <a href="#" class="text-indigo-600 hover:underline">SSRN Link</a>
+                    </div>
+                    <div class="border-t pt-6">
+                        <h3 class="text-lg font-semibold text-gray-800">Conference Paper</h3>
+                        <p>"State Reforms in Transitional Democracies: From Mass Uprising to State Building." - Presented at IPSA.</p>
+                    </div>
+                     <div class="border-t pt-6">
+                        <h3 class="text-lg font-semibold text-gray-800">R Code Project</h3>
+                        <p>"Rohingya Camp Ratios by July 2024: Visualizing and Observing Age and Gender Structures and Humanitarian Needs- An R-based Analysis."</p>
+                        <a href="#" class="text-indigo-600 hover:underline">Access Project</a>
+                    </div>
+                    <div class="border-t pt-6">
+                        <h3 class="text-lg font-semibold text-gray-800">Master's Research Monograph</h3>
+                        <p>"Safe Road Act 2018." - Supervised by Dr. Dil Roushan Zinnat Ara Parvin, University of Dhaka.</p>
+                         <a href="#" class="text-indigo-600 hover:underline">View Monograph</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="academics" class="py-16">
+            <h2 class="section-title">Academic Background</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card">
+                    <div>
+                        <p class="text-sm text-gray-500">Jan 2019 – Dec 2019</p>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1">Master of Social Science in Political Science</h3>
+                        <p class="font-medium text-gray-600">University of Dhaka, Bangladesh</p>
+                        <p class="mt-2 text-gray-600">CGPA: 3.64 / 4.00</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <p class="text-sm text-gray-500">Jan 2015 – Dec 2018</p>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1">Bachelor of Social Science in Political Science</h3>
+                        <p class="font-medium text-gray-600">University of Dhaka, Bangladesh</p>
+                        <p class="mt-2 text-gray-600">CGPA: 3.58 / 4.00</p>
+                    </div>
+                </div>
+                <div class="card">
+                   <div>
+                        <p class="text-sm text-gray-500">2014</p>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1">Higher Secondary School Certificate (Science)</h3>
+                        <p class="font-medium text-gray-600">Holy Cross College, Dhaka</p>
+                        <p class="mt-2 text-gray-600">GPA: 5.00 / 5.00</p>
+                   </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <p class="text-sm text-gray-500">2012</p>
+                        <h3 class="text-xl font-bold text-gray-900 mt-1">Secondary School Certificate (Science)</h3>
+                        <p class="font-medium text-gray-600">Holy Cross Girls' High School, Dhaka</p>
+                        <p class="mt-2 text-gray-600">GPA: 5.00 / 5.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies" class="py-16">
+            <h2 class="section-title">Hobbies & Interests</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="card">
+                    <div>
+                        <div class="flex justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Reading</h3>
+                        <p class="mt-2">I enjoy exploring different genres, from classic literature to contemporary non-fiction.</p>
+                    </div>
+                </div>
+                <div class="card">
+                       <div>
+                        <div class="flex justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Traveling</h3>
+                        <p class="mt-2">Discovering new places, cultures, and cuisines is a passion of mine.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="flex justify-center mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.636 5.636a9 9 0 0112.728 0m-12.728 0a5 5 0 017.072 0"/></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Coding</h3>
+                        <p class="mt-2">I enjoy learning new programming languages like Python and R for data analysis and visualization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-16">
+            <h2 class="section-title">Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg shadow-md" src="https://placehold.co/600x800?text=Image+1" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg shadow-md" src="https://placehold.co/600x400?text=Image+2" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg shadow-md" src="https://placehold.co/600x400?text=Image+3" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg shadow-md" src="https://placehold.co/600x600?text=Image+4" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg shadow-md" src="https://placehold.co/600x800?text=Image+5" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg shadow-md" src="https://placehold.co/600x400?text=Image+6" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg shadow-md" src="https://placehold.co/600x400?text=Image+7" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg shadow-md" src="https://placehold.co/600x600?text=Image+8" alt="">
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-6 text-gray-500 italic">This is where you can add photos from conferences, travels, or professional events.</p>
+        </section>
+        
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12">
+        <p>&copy; <span id="currentYear"></span> Tanjina Tahsin. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
